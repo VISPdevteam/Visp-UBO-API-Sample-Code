@@ -1,5 +1,7 @@
 <?php
 
+require_once 'config.php';
+
 $base_url = 'https://data.visp.net';
 $route = '/graphql';
 
@@ -176,7 +178,7 @@ function curlAPI($url, $data, $header, $request_type = "POST", $timeout=30) {
 }
 
 
-function getUBOApi($data, $timeout=DEFAULT_TIMEOUT){
+function getUBOApi($data, $timeout=30){
     global $route, $base_url;
     $body = $data['body'];
     $requestType = $data['request_type'];
@@ -217,4 +219,21 @@ function getUboAuth($clientId, $clientSecret, $username, $password){
     $auth->setCredentials($username,$password);
     $auth->setUrl($base_url."/token");
     return $auth;
+}
+
+function get_option($field) {
+    global $clientId, $clientSecret, $username, $password;
+    
+    switch ($field) {
+        case 'graphql_client_id':
+            return $clientId;
+        case 'graphql_client_secret':
+            return $clientSecret;
+        case 'graphql_client_user_name':
+            return $username;
+        case 'graphql_client_pass':
+            return $password;
+        default:
+            return '';
+    }
 }
