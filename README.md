@@ -1,5 +1,5 @@
 
-VISP UBO API Sample COde
+VISP UBO API Sample Code
 ========================
 
 Current sample codes in:
