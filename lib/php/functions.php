@@ -188,8 +188,8 @@ function getUBOApi($data, $timeout=30){
 
     $clientId = get_option('graphql_client_id');
     $clientSecret = get_option('graphql_client_secret');
-    $username = get_option('graphql_client_user_name',true);
-    $password = get_option('graphql_client_pass',true);
+    $username = get_option('graphql_client_user_name');
+    $password = get_option('graphql_client_pass');
 
     $clientId = isset($data['graphql_client_id'])?$data['graphql_client_id']:$clientId;
     $clientSecret = isset($data['graphql_client_secret'])?$data['graphql_client_secret']:$clientSecret;
