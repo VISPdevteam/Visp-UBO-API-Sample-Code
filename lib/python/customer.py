@@ -1,7 +1,7 @@
 import functions
 import json # for turning our dictionaries to json
 
-#get a token for our session. Using "Session" from the requests library, the token is stored on the session
+#get a token for our session. Using "Session" from the requests library, the token is stored on the session "object"
 functions.get_token()
 
 data = {
@@ -28,7 +28,3 @@ print(response['data']['customer']['username'])
 
 data = response['data']['customer'];
 print(data['username'])
-#TODO
-# query wireless service speed limits
-# add a customer and register a package to his account
-# update a customer's information
