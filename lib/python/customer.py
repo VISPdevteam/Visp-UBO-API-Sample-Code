@@ -1,10 +1,9 @@
 import functions
-import json # for turning our dictionaries to json
 
 #get a token for our session. Using "Session" from the requests library, the token is stored on the session "object"
 functions.get_token()
 
-data = {
+request = {
     "operationName": "customer",
     "query": 'query customer($customer_id:Int!){\n customer(customer_id:$customer_id){\n customer_id\n username\n first_name\n last_name\n}\n}',
     "variables": {
@@ -12,7 +11,7 @@ data = {
     }
 };
 
-response = functions.get_ubo_api(data)
+response = functions.get_ubo_api(request)
 # should return a response dictionary
 # {
 #   'data': {
