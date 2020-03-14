@@ -7,6 +7,7 @@ Current sample codes in:
 
  - PHP
  - Python
+ - Ruby
 
 Current sample calls:
 --------
