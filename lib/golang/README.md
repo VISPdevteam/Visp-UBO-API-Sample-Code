@@ -6,4 +6,4 @@ all the examples have a main function you can try running by running a file with
 
 e.g. go run customer.go functions.go config.go
 
-`go run customer.go functions.go config.go`
+> go run customer.go functions.go config.go
