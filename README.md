@@ -8,6 +8,7 @@ Current sample codes in:
  - PHP
  - Python
  - Ruby
+ - Go
 
 Current sample calls:
 --------
