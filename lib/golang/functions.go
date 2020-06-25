@@ -14,7 +14,7 @@ type UBOApiData struct {
 }
 
 func getBaseUrl() string{
-  return "https://sandbox.visp.net"
+  return "https://data.visp.net"
 }
 
 func getTokenUrl() string{
