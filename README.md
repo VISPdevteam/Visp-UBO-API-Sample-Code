@@ -9,6 +9,7 @@ Current sample codes in:
  - Python
  - Ruby
  - Go
+ - Node.js
 
 Current sample calls:
 --------
