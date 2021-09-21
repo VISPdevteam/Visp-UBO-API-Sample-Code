@@ -10,6 +10,7 @@ Current sample codes in:
  - Ruby
  - Go
  - Node.js
+ - c#
 
 Current sample calls:
 --------
